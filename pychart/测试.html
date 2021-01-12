@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/jiang1_su1_xu2_zhou1.js"></script>
+
+</head>
+<body>
+    <div id="08eaec54a94f4031a206d9fa96660653" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_08eaec54a94f4031a206d9fa96660653 = echarts.init(
+            document.getElementById('08eaec54a94f4031a206d9fa96660653'), 'white', {renderer: 'canvas'});
+        var option_08eaec54a94f4031a206d9fa96660653 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "effectScatter",
+            "name": "test",
+            "coordinateSystem": "geo",
+            "showEffectOn": "render",
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "\u4e30\u53bf",
+                    "value": [
+                        116.6,
+                        34.7,
+                        120
+                    ]
+                },
+                {
+                    "name": "\u6c9b\u53bf",
+                    "value": [
+                        116.93,
+                        34.73,
+                        160
+                    ]
+                },
+                {
+                    "name": "\u94dc\u5c71\u533a",
+                    "value": [
+                        117.82,
+                        30.93,
+                        180
+                    ]
+                },
+                {
+                    "name": "\u8d3e\u6c6a\u533a",
+                    "value": [
+                        117.45,
+                        34.45,
+                        200
+                    ]
+                },
+                {
+                    "name": "\u9f13\u697c\u533a",
+                    "value": [
+                        119.3,
+                        26.08,
+                        180
+                    ]
+                },
+                {
+                    "name": "\u6cc9\u5c71\u533a",
+                    "value": [
+                        117.18,
+                        34.25,
+                        190
+                    ]
+                },
+                {
+                    "name": "\u4e91\u9f99\u533a",
+                    "value": [
+                        117.22,
+                        34.25,
+                        130
+                    ]
+                },
+                {
+                    "name": "\u90b3\u5dde\u5e02",
+                    "value": [
+                        117.95,
+                        34.32,
+                        160
+                    ]
+                },
+                {
+                    "name": "\u65b0\u6c82\u5e02",
+                    "value": [
+                        118.35,
+                        34.38,
+                        140
+                    ]
+                },
+                {
+                    "name": "\u7762\u5b81\u53bf",
+                    "value": [
+                        117.95,
+                        33.9,
+                        170
+                    ]
+                }
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "test"
+            ],
+            "selected": {
+                "test": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "Geo\u5730\u56fe\u793a\u4f8b",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "geo": {
+        "map": "\u5f90\u5dde",
+        "roam": true,
+        "aspectScale": 0.75,
+        "nameProperty": "name",
+        "selectedMode": false,
+        "emphasis": {}
+    }
+};
+        chart_08eaec54a94f4031a206d9fa96660653.setOption(option_08eaec54a94f4031a206d9fa96660653);
+    </script>
+</body>
+</html>
