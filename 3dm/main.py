@@ -51,9 +51,11 @@ def save_gif(html_text):
         if img:
             src = img.get('src')
             names = src.split(r"/")
-            save_img(src, names[-1])
-            _str += '\n<img src="%s" alt="%s" />' % (names[-1],names[-1])
-
+            _src = names[-1].replace(':', '').replace('~', '').replace('-', '')
+            if _src.find('.') == -1:
+                _src += '.gif'
+            save_img(src, _src)
+            _str += '\n<img src="%s"/>' % (_src)
     return _str
 
 def save_html(imgs_html):
@@ -73,9 +75,11 @@ def request_each_html(url):
         if i == 0:
             html = start_request('{}.html'.format(url))
             html_str += save_gif(html)
+            save_gif(html)
         else:
             html = start_request('{}_{}.html'.format(url, i + 1))
             html_str += save_gif(html)
+            save_gif(html)
 
     save_html(html_str)
     print('任务完成')
